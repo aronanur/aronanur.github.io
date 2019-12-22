@@ -29,7 +29,7 @@ function showRole(name, roleList){
       roleList[i].innerHTML = pickedRole[i]
     }else{
       roleList[i].style.color = 'red'
-      roleList[i].innerHTML = 'Not Picked'
+      roleList[i].innerHTML = 'N/A'
     }
   }
 
