@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lakki+Reddy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile Legend Draft Pick Analysis</title>
+</head>
+<body>
+    <h1>Mobile Legend Draft Pick Analysis</h1>
+    <p class="credit">MLDPA By Arona Nur Tetulis</p>
+    <audio id="clicked" src="clicked.mp3" autoplay='false'></audio>
+    <audio id="result" src="nana.mp3" autoplay='false'></audio>
+    <p id="picked-warning">Let's pick up the draft!</p>
+    <section class="picked-list">
+        <ul class="role-list">
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+            <li class="list"></li>
+        </ul>
+    </section>
+    <section class="button-wrapper">
+        <a href="#kesimpulan" id='analyze' disabled onclick="analyze(role)">Analyze</a>
+    </section>
+
+    <p class="letter">List Role (Click for picked up the role)</p>
+
+    <section class="button-container">
+        <button onclick="showRole('Marksman', roleList)">Marksman</button>
+        <button onclick="showRole('Mage', roleList)">Mage</button>
+        <button onclick="showRole('Tank', roleList)">Tank</button>
+        <button onclick="showRole('Assasin', roleList)">Assasin</button>
+        <button onclick="showRole('Fighter', roleList)">Fighter</button>
+    </section>
+
+    <section id="kesimpulan" style="display: none;">
+        <h3>Analyzing Result</h3>
+        <p id="hasil-analisis"></p>
+    </section>
+<script src="main.js"></script>    
+</body>
+</html>

@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lakki Reddy', cursive;
+}
+
+body {
+    background-color: #0E141B;
+}
+
+h1 {
+    text-align: center;
+    color: #e49233;
+    font-size: 42px;
+    padding: 30px;
+}
+
+.picked-list {
+    display: block;
+    width: 50%;
+    margin: 20px 25%;
+    height: 100px;
+    /* background-color: red; */
+}
+
+#picked-warning {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 0 5px 0;
+    color: #e49233;
+}
+
+.letter {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0 5px 0;
+    color: #e49233;
+}
+
+.picked-list ul{
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.picked-list ul li {
+    display: inline-block;
+    width: 19%;
+    height: 100%;
+    border: 1px solid #e49233;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+.button-wrapper{
+    width: 20%;
+    margin: 10px 40%;
+    height: 50px;
+}
+.button-wrapper a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #aaa;
+    color: white;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button-wrapper button:hover{
+    background-color: #8f530f;
+}
+
+.button-container {
+    width: 50%;
+    margin: 20px 25%;
+    height: 60px;
+}
+
+.button-container button{
+    height: 100%;
+    width: 19%;
+    margin: 0 1px 0 1px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+#kesimpulan {
+    width: 50%;
+    height: 300px;
+    margin: 20px 25%;
+    /* background-color: red; */
+}
+
+#kesimpulan h3 {
+    color: #e49233;
+    text-align: center;
+    padding: 10px;
+}
+
+#kesimpulan p {
+    color: white;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-indent: 20px;
+}
+
+.credit {
+    text-align: center;
+    color: tomato;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 28px;
+    }
+    .picked-list {
+        width: 90%;
+        margin: 10px 7%;
+    }
+    .picked-list ul li{
+        font-size: 14px;
+        width: 18%;
+    }
+    .button-container {
+        width: 90%;
+        margin: 10px 7%;
+    }
+    .button-container button{
+        width: 18%;
+    }
+    #kesimpulan {
+        width: 90%;
+        margin: 10px 5%;
+    }
+}
